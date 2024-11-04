@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ /* ===== Colours ===== */
+ :root{
+    --primary: #f1008c;
+    --primary-hover: #CD7D7C;                
+    --background: #3971a2;
+    --white:#fff;
+    --navbar-height: 60px;
+ }
+
+ 
+body{
+scroll-behavior: smooth;
+transition: 0.3s ease;
+}
+header{
+  background-image:linear-gradient(to bottom, var(--primary), var(--background)), url(islamic-background-3486257_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    padding: 50px 0px;
+}
+header .header-title,
+header .contact-link{
+  text-align: center;
+}
+header .header-title{
+  margin-bottom: 30px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+header .contact-link p{
+  font-style: italic;
+  font-weight: bold;
+}
+header .contact-link p a{
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+}
+header .contact-link p a:hover{
+  color: var(--background);
+}
+
+main{
+  margin-top: 5rem;
+}
+.information{
+  text-align: center;
+  font-size: 1.25rem;
+  max-width: 500px;
+  margin: auto;
+  line-height: 1.4;
+  margin-bottom: 5rem;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.container .container1{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+.container .container1 .cont-img{
+  width: 80px;
+  height: 80px;
+}
+.container .container1 .cont-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.container2{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container2 .cont-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--background);
+  padding: 12px;
+}
+.cont-item .item-details p a{
+  color: var(--white);
+  text-decoration: none;
+}
+.cont-item .item-details p a:hover{
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 860px){
+  .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-block: 5rem;
+  }
+  .information{
+    max-width: 300px;
+  }
+}
+
+marquee{
+  margin-block: 5rem;
+  text-align: center;
+  background-color: var(--primary);
+  padding: 12px;
+  color: var(--white);
+  line-height: 1.3;
+}
